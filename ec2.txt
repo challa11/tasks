@@ -1,0 +1,24 @@
+1) we allow port number 22 and ip range 0.0.0.0 did not give in real time in real time our office vpn range or particular access members ips only we give.
+2) connect windows server=launch windows server click connect click rdp client click get password click browse select your pem file here click decrypt password  copy it open mobxtrem or remote desktop connecter give ip and click more options username = administrator click connect it ask password give that decrypt password here click login (rdp port number =3389)
+3) copy ami one aws ac to different aws ac =ec2--> ami-->select ami---> permissions -->edit --> add different persona account id and select covert to ebs volume click save (same we copy snapshot)
+4) ebs volumes we cant directly encrypt
+5) ebs volume encryption 1st take volume snapshot(name rao-snap)-->rao-snap select--> actions--> create volume--> choose ec2 and volume both same AZ and select encryption --> create volume --> attach this volume to server 
+6) it attach as a secondary volume no need down time but we need main root volume it takes down time
+7) after attach new volume to server we must mount other wise we cant use it
+8) volume extending time we did not get down time. volume decrease time it takes down time after modifying we resize volume other wise we cant use it
+9) to change part number and run it --> install httpd --> check ip using --> now change port 80 to 82 --> cd /etc/conf --> nano httpd.conf --> change this file listener 82 save and quit  --> service httpd restart --> now check google we dint get output --> go to sg and allow port 82 and check in google if incase not get try to ip:82 we get output (when change configuration file we must take backup and try to edit)
+10) by default ping cmd not allow aws ec2 we want enable we add port number ICMP allow.
+11) launch windows ec2 server and connect it check volumes this pc see  next create new volume add to it once add we cant use the new add volume so login and windows button right click select disk management here you see the new add disk unallocated means not allocate it selct the unallocated volume right click select online again right click select initialize click ok again right click select new simple volume click next select driver like c d e click next finish now go to this pc you check you find 2 volumes  
+12) retention period means how many days after it expire (retention means deleted time we did not add it we delete manually)
+13) Lifecyle manager working based on tag if we have 20 ebs volumes tag dev we add it in lifecycle manager it take 20 ebs volumes backup
+14) we want to add encryption all ebs volumes newly created volumes ec2 dashboard -->settings --> ebs encryption --> manage --> enable --> update ebs encryption
+15) we enable delete volume on termination the server termination time ebs volume also delete 
+16) delete on termination we can enable and disable on launch instance time in storage tab only and we can change it cli based modify also. we don't have access the console access.
+17) in one ec2 server we attach only one iam role we cant attach multiple iam roles one single server
+18) we can add 2nd private ip for server in networking configuration place but default vpc attached server we cant attach it only own vpc server we add it.
+19) we can download files and directory's in ec2 server using FileZilla open click site manger click new site add host user key and connect it using it we upload files and directory in local server to ec2 and download ec2 to local (we use FileZilla or WINSCP using)
+20)  we don't have pemfile but we connect it using public dns 
+
+
+ 
+
